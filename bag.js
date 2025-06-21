@@ -6,6 +6,7 @@ function onLoad() {
   loadBagItemObjects();
   displayBagItems();
   displayBagSummary();
+  displayBagIcon();
 }
 
 function displayBagSummary() {
@@ -85,9 +86,9 @@ function generateItemHTML(item) {
       <img class="bag-item-img" src="../${item.image}">
     </div>
     <div class="item-right-part">
-      <div class="company">${item.company}</div>
-      <div class="item-name">${item.item_name}</div>
-      <div class="price-container">
+      <div class="company_name">${item.company}</div>
+      <div class="item_name">${item.item_name}</div>
+      <div class="price_container">
         <span class="current-price">Rs ${item.current_price}</span>
         <span class="original-price">Rs ${item.original_price}</span>
         <span class="discount-percentage">(${item.discount_percentage}% OFF)</span>
